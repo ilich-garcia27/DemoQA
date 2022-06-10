@@ -35,7 +35,7 @@ When(/^I search for the following book: (.*)$/, async (book) => {
     await (await ProfilePage.searchBox).setValue(book);
 });
 
-When(/^I add (.*) and (.*) to my collection$/, async (book1, book2) => {
+When(/^I add (.*) and (.*) to my collection$/, async () => {
     (await ProfilePage.bookStore).scrollIntoView();
     await ProfilePage.bookStore.click();
     (await BookStorePage.programmingJSBook).scrollIntoView();
