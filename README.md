@@ -1,5 +1,7 @@
 # Demo QA Automation 🚀
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ilich-garcia27_DemoQA&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ilich-garcia27_DemoQA)
+
 This "Demo QA" is a WebdriverIO automation project based on CucumberJS and Chai, intended to run on Google Chrome, Mozilla Firefox and Safari.
 
 ## Technologies ⚙
