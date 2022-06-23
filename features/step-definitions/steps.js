@@ -64,7 +64,7 @@ When(/^I delete my account from the app$/, async () => {
     await (await ProfilePage.confirmDelete).click();
 });
 
-When(/^I access (.*) book to see its information$/, async (book) => {
+When(/^I access (.*) book to see its information$/, async () => {
     (await ProfilePage.bookStore).scrollIntoView();
     await ProfilePage.bookStore.click();
     (await BookStorePage.designingEvolvableBook).scrollIntoView();
