@@ -74,6 +74,7 @@ When(/^I access (.*) book to see its information$/, async () => {
 /************************* THENS *************************/
 
 Then(/^I should see the following list of books (.*), (.*)$/, async (book1, book2) => {
+    chaiExpect(await ProfilePage.programmingJSBook).to.exist;
     chaiExpect(await ProfilePage.programmingJSBook.getText()).to.be.equal(book1);
     chaiExpect(await ProfilePage.understandingECMABook.getText()).to.be.equal(book2);
     await ProfilePage.logout.click();
@@ -101,7 +102,6 @@ Then(/^I should get redirected to the login page$/, async () => {
 });
 
 Then(/^I should see the following book: (.*)$/, async (book) => {
-    chaiExpect(await BookStorePage.learningJSBook).to.exist;
     chaiExpect(await BookStorePage.learningJSBook.getText()).to.be.equal(book);
     await BookStorePage.logout.click();
 });
