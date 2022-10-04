@@ -74,15 +74,12 @@ When(/^I access (.*) book to see its information$/, async () => {
 /************************* THENS *************************/
 
 Then(/^I should see the following list of books (.*), (.*)$/, async (book1, book2) => {
-    chaiExpect(await ProfilePage.programmingJSBook).to.exist;
     chaiExpect(await ProfilePage.programmingJSBook.getText()).to.be.equal(book1);
-    chaiExpect(await ProfilePage.understandingECMABook).to.exist;
     chaiExpect(await ProfilePage.understandingECMABook.getText()).to.be.equal(book2);
     await ProfilePage.logout.click();
 });
 
 Then(/^I should see the following message (.+)$/, async (message) => {
-    chaiExpect(await LoginPage.invalidUserMessage).to.exist;
     chaiExpect(await LoginPage.invalidUserMessage.getText()).to.be.equal(message);
 });
 
