@@ -101,7 +101,6 @@ Then(/^I should get redirected to the login page$/, async () => {
 });
 
 Then(/^I should see the following book: (.*)$/, async (book) => {
-    chaiExpect(await BookStorePage.learningJSBook).to.exist;
     chaiExpect(await BookStorePage.learningJSBook.getText()).to.be.equal(book);
     await BookStorePage.logout.click();
 });
