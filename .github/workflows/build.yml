@@ -5,6 +5,7 @@ on:
       - main
       - develop
       - wip
+      - feature\/.+-branch
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
