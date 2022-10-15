@@ -96,6 +96,7 @@ Then(/^I shouldn't be able to see any book on my books collection$/, async () =>
 
 Then(/^I should get redirected to the login page$/, async () => {
     chaiExpect(await LoginPage.userName).to.exist;
+    chaiExpect(await LoginPage.userName).to.exist;
     chaiExpect(await LoginPage.password).to.exist;
     chaiExpect(await LoginPage.login).to.exist;
 });
