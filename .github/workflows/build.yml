@@ -6,7 +6,7 @@ on:
       - develop
       - wip
       - demo\/neobank
-      - 'feature/**'
+      - 'feature/**-stable'
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
