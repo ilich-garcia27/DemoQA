@@ -5,7 +5,8 @@ on:
       - main
       - develop
       - wip
-      - (feature/*-branch)
+      - demo\/neobank
+      - 'feature/**'
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
