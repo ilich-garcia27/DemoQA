@@ -1,12 +1,8 @@
-name: Build
+name: SonarCloud Analysis
 on:
   push:
     branches:
       - main
-      - develop
-      - wip
-      - demo\/neobank
-      - 'feature/**-stable'
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
